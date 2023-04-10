@@ -18,9 +18,9 @@ app.use("/users", userRoute);
 app.use("/users/:id", userRoute);
 app.use("/analytics/users",analyticsRoutes);
 app.use("/analytics/users/top-active",analyticsRoutes);
-app.use("/users", postRoute);
-app.use("/users/:id",postRoute);
-app.use("//posts/:id/like",postRoute)
+app.use("/postusers", postRoute);
+app.use("/postusers/:id",postRoute);
+app.use("/posts/:id/like",postRoute)
 app.use("/posts/:id/unlike",postRoute);
 app.use("/analytics/posts",postRoute);
 app.use("/analytics/posts/top-liked", postRoute)
